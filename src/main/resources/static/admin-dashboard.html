@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - OTSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo">OTSS <span>| Support</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="create-ticket.html">Create Ticket</a>
+        <a href="track-ticket.html">Track Ticket</a>
+        <a href="#" class="active" onclick="adminLogout()">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="dashboard-card">
+        <h2>Admin Dashboard</h2>
+        <p class="subtitle">Manage all support tickets</p>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="number" id="totalCount">0</div>
+                <div class="label">Total</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="number" id="pendingCount">0</div>
+                <div class="label">Pending</div>
+            </div>
+
+            <div class="stat-box">
+                <div class="number" id="resolvedCount">0</div>
+                <div class="label">Resolved</div>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+
+                <tbody id="ticketsTableBody">
+                <tr>
+                    <td colspan="5">
+                        <div class="empty-state">
+                            <p>Loading...</p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+    loadDashboard();
+</script>
+</body>
+</html>

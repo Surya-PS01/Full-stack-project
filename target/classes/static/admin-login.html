@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - OTSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo">OTSS <span>| Support</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="create-ticket.html">Create Ticket</a>
+        <a href="track-ticket.html">Track Ticket</a>
+        <a href="admin-login.html" class="active">Admin</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Admin Login</h2>
+
+        <div class="form-group">
+            <label for="pin">Admin PIN</label>
+            <input type="password" id="pin" placeholder="Enter 4-digit PIN" maxlength="4">
+        </div>
+
+        <button class="btn btn-primary btn-block" id="adminLoginBtn" onclick="adminLogin()">
+            Login
+        </button>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your support ticket status - OTSS">
+    <title>Track Ticket - OTSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<header class="navbar">
+    <a href="index.html" class="logo">OTSS <span>| Support</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="create-ticket.html">Create Ticket</a>
+        <a href="track-ticket.html" class="active">Track Ticket</a>
+        <a href="admin-login.html">Admin</a>
+    </nav>
+</header>
+
+<!-- Track Ticket -->
+<div class="container">
+    <div class="card">
+        <h2>Track Your Ticket</h2>
+
+        <div class="form-group">
+            <label for="ticketId">Ticket ID</label>
+            <input type="number" id="ticketId" placeholder="Enter your ticket ID (e.g. 1)">
+        </div>
+
+        <button class="btn btn-primary btn-block" id="trackTicketBtn" onclick="trackTicket()">
+            Track Ticket
+        </button>
+
+        <!-- Result appears here -->
+        <div id="ticketResult" class="ticket-result"></div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

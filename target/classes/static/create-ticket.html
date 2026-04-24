@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Create Ticket - OTSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">OTSS <span>| Support</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="create-ticket.html" class="active">Create Ticket</a>
+        <a href="track-ticket.html">Track Ticket</a>
+        <a href="admin-login.html">Admin</a>
+    </nav>
+</header>
+
+
+<div class="container">
+    <div class="card">
+        <h2>Create a Support Ticket</h2>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Brief summary of your issue">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Describe your issue in detail..."></textarea>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="submitTicketBtn" onclick="submitTicket()">
+            Submit Ticket
+        </button>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
